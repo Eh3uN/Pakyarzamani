@@ -16,70 +16,85 @@
       href="./src/images/title/title-logo.png"
     />
   </head>
-  <body class="w-full h-full bg-[#f3f3f3] pb-10">
+  <body class="w-full bg-[#f3f3f3] pb-10">
     <!--#region wrapper-->
-    <div class="wrapper w-full h-full bg-[#f3f3f3]">
+    <div class="wrapper w-full bg-[#f3f3f3]">
       <!--#region header-->
       <header
-        class="header w-full md:w-360 h-20 md:h-24 px-4 md:px-8 flex justify-between bg-[#6AB187] md:bg-[#6AB187] rounded-b-2xl md:rounded-b-xl items-center fixed md:fixed top-0 z-50 md:left-1/2 md:-translate-x-1/2 md:max-w-360"
+        class="header w-full h-16 md:h-24 px-4 md:px-8 flex justify-between items-center fixed top-0 z-50 bg-[#6AB187] md:left-1/2 md:-translate-x-1/2 md:max-w-360"
       >
-        <div>
-          <a href="#">
-            <img
-              class="w-16 h-10 md:w-25 md:h-23.75 hidden md:block object-cover"
-              src="./src/images/header/Logo.png"
-              alt=""
-            />
-          </a>
-        </div>
-        <div class="flex gap-4 md:gap-10 items-center justify-center">
-          <div class="hidden md:flex gap-10 items-center justify-center">
+        <div class="flex gap-4 md:gap-10 items-center justify-center order-1 md:order-2">
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden flex flex-col gap-1.5 cursor-pointer"
+            aria-label="منو"
+          >
+            <span class="w-6 h-0.5 bg-white block"></span>
+            <span class="w-6 h-0.5 bg-white block"></span>
+            <span class="w-6 h-0.5 bg-white block"></span>
+          </button>
+          <nav
+            id="mobile-menu"
+            class="hidden md:flex gap-10 flex-col md:flex-row absolute md:relative top-16 md:top-0 left-0 right-0 md:left-auto md:right-auto bg-[#6AB187] md:bg-transparent p-4 md:p-0 w-full md:w-auto items-center justify-center"
+          >
             <a
               href="#"
-              class="px-4 py-2 rounded-xl font-medium-es text-[15px] text-[whitesmoke] hover:text-[whitesmoke] hover:bg-[#20948b] transition duration-500"
+              class="block md:inline px-4 py-2 rounded-xl font-medium-es text-sm md:text-[15px] text-[whitesmoke] hover:text-[whitesmoke] hover:bg-[#20948b] transition duration-500"
             >
               صفحه اصلی
             </a>
             <a
               href="#"
-              class="px-4 py-2 rounded-xl font-medium-es text-[15px] text-[whitesmoke] hover:text-[whitesmoke] hover:bg-[#20948b] transition duration-500"
+              class="block md:inline px-4 py-2 rounded-xl font-medium-es text-sm md:text-[15px] text-[whitesmoke] hover:text-[whitesmoke] hover:bg-[#20948b] transition duration-500"
             >
               درباره ما
             </a>
             <a
               href="#service"
-              class="px-4 py-2 rounded-xl font-medium-es text-[15px] text-[whitesmoke] hover:text-[whitesmoke] hover:bg-[#20948b] transition duration-500"
+              class="block md:inline px-4 py-2 rounded-xl font-medium-es text-sm md:text-[15px] text-[whitesmoke] hover:text-[whitesmoke] hover:bg-[#20948b] transition duration-500"
             >
               خدمات ما
             </a>
             <a
               href="#questions"
-              class="w-fit px-4 py-2 rounded-xl font-medium-es text-[15px] text-[whitesmoke] hover:text-[whitesmoke] hover:bg-[#20948b] transition duration-300"
+              class="block md:inline px-4 py-2 rounded-xl font-medium-es text-sm md:text-[15px] text-[whitesmoke] hover:text-[whitesmoke] hover:bg-[#20948b] transition duration-300"
             >
               سوالات متداول
             </a>
-          </div>
+          </nav>
+        </div>
+
+        <div class="order-2 md:order-1">
+          <a href="#">
+            <img
+              class="w-12 h-8 md:w-25 md:h-23.75 object-cover"
+              src="./src/images/header/Logo.png"
+              alt="لوگو"
+            />
+          </a>
         </div>
 
         <div
-          class="w-24 md:w-30.5 h-9 md:h-10 bg-[#20948b] text-[#168861] text-xs md:text-[13px] transition duration-500 text-center leading-9 md:leading-10 rounded-xl hover:bg-[#166861] cursor-pointer"
+          class="w-20 md:w-30.5 h-9 md:h-10 bg-[#20948b] text-xs md:text-[13px] transition duration-500 text-center leading-9 md:leading-10 rounded-xl hover:bg-[#166861] cursor-pointer order-3 md:order-3"
         >
           <a
-            class="rounded-xl font-medium-es flex justify-center text-center text-[whitesmoke] text-[14px]"
+            class="rounded-xl font-medium-es flex justify-center text-center text-[whitesmoke] text-[12px] md:text-[14px]"
             href="#footer"
             >تماس با ما</a
           >
         </div>
       </header>
-      <div class="w-full h-23.75"></div>
+      <div class="w-full h-16 md:h-24"></div>
       <!--#endregion header-->
       <!--#region about-->
-      <div class="about w-full max-w-360 mx-auto flex flex-col">
+      <div class="about w-full px-4 md:px-0 md:max-w-360 mx-auto flex flex-col">
         <div
-          class="w-full h-54.5 bg-white drop-shadow-xl mt-10 px-8 py-3 rounded-2xl flex flex-col gap-3"
+          class="w-full bg-white drop-shadow-xl mt-6 md:mt-10 px-4 md:px-8 py-6 md:py-3 rounded-2xl flex flex-col gap-3"
         >
           <div class="flex flex-col">
-            <h2 class="text-[28px] font-bold-es text-[#166861]">درباره ما</h2>
+            <h2 class="text-xl md:text-[28px] font-bold-es text-[#166861]">
+              درباره ما
+            </h2>
           </div>
           <div>
             <span
@@ -92,7 +107,7 @@
           </div>
           <div class="flex justify-center flex-col">
             <h6
-              class="text-[14px] leading-7 text-[#166861] font-regular-es w-[99.5%] text-start"
+              class="text-[13px] md:text-[14px] leading-6 md:leading-7 text-[#166861] font-regular-es w-full text-start"
             >
               ما اینجا جمع نشدیم که وعده‌های بزرگ بدیم. اینجاییم چون سال‌ها از
               نزدیک دیدیم اعتیاد چطور آدم‌ها و خانواده‌ها رو خسته می‌کنه! دیدیم
@@ -108,7 +123,7 @@
               بهبودی.
             </h6>
             <h6
-              class="text-[14px] leading-7 text-[#166861] font-regular-es w-[99.5%] text-start"
+              class="text-[13px] md:text-[14px] leading-6 md:leading-7 text-[#166861] font-regular-es w-full text-start mt-3"
             >
               در ادامه با ما همراه باشید تا این
               <span class="text-[#6AB187] underline">مسیر امن</span> رو یاد
@@ -120,24 +135,28 @@
       <!--#endregion about-->
       <!--#region path-->
       <div
-        class="w-360 max-w-360 mx-auto path flex flex-col justify-center items-center"
+        class="w-full px-4 md:px-0 md:max-w-360 mx-auto path flex flex-col justify-center items-center"
       >
         <div
-          class="path-p1 w-[39.5%] bg-white h-50 mt-10 rounded-2xl drop-shadow-xl py-10 flex flex-col gap-5 justify-center items-center"
+          class="path-p1 w-full md:w-[39.5%] bg-white h-auto md:h-50 mt-6 md:mt-10 rounded-2xl drop-shadow-xl py-6 md:py-10 px-4 md:px-0 flex flex-col gap-5 justify-center items-center"
         >
           <div class="flex flex-col justify-center items-center gap-1">
-            <h6 class="text-[16px] font-regular-es text-[#166861]">
+            <h6
+              class="text-sm md:text-[16px] font-regular-es text-[#166861] text-center"
+            >
               اگر اینجایی، یعنی یک قدم شجاعانه برداشتی؛ ما کنار توایم
             </h6>
-            <h6 class="text-[16px] font-regular-es text-[#166861]">
+            <h6
+              class="text-sm md:text-[16px] font-regular-es text-[#166861] text-center"
+            >
               بهبودی یک راهه، نه یک جهش؛ اینجا جاییه که مسیرت شروع می‌شه
             </h6>
           </div>
         </div>
-        <div class="path-p2 flex gap-8">
-          <div class="card-1">
+        <div class="path-p2 flex flex-col md:flex-row gap-4 md:gap-8 w-full">
+          <div class="card-1 w-full md:w-80">
             <div
-              class="card w-80 h-55 bg-white rounded-xl drop-shadow-xl mt-10 px-2 py-4 flex flex-col items-center gap-3"
+              class="card w-full md:w-80 h-auto md:h-55 bg-white rounded-xl drop-shadow-xl mt-4 md:mt-10 px-4 md:px-2 py-6 md:py-4 flex flex-col items-center gap-3"
             >
               <div
                 class="card-p1 w-16 h-16 rounded-full bg-[#6AB187aa] drop-shadow-2xl flex items-center justify-center gap-8"
@@ -145,24 +164,28 @@
                 <img
                   class="w-10 h-10"
                   src="./src/images/path/brain-svgrepo-com.svg"
-                  alt=""
+                  alt="مغز"
                 />
               </div>
               <div class="card-p2">
-                <h2 class="font-bold-es text-[16px] text-[#166861]">شناخت</h2>
+                <h2
+                  class="font-bold-es text-base md:text-[16px] text-[#166861]"
+                >
+                  شناخت
+                </h2>
               </div>
               <div class="card-p3 flex justify-center">
                 <h6
-                  class="font-regular-es w-[80%] leading-7 text-[14px] text-[#166861] text-center"
+                  class="font-regular-es w-[85%] leading-6 md:leading-7 text-[13px] md:text-[14px] text-[#166861] text-center"
                 >
                   شناخت مشکل، نخستین و مهم‌ترین گام در مسیر بهبودی است
                 </h6>
               </div>
             </div>
           </div>
-          <div class="card-2">
+          <div class="card-2 w-full md:w-80">
             <div
-              class="card w-80 h-55 bg-white rounded-2xl drop-shadow-xl mt-10 px-2 py-4 flex flex-col items-center gap-3"
+              class="card w-full md:w-80 h-auto md:h-55 bg-white rounded-2xl drop-shadow-xl mt-4 md:mt-10 px-4 md:px-2 py-6 md:py-4 flex flex-col items-center gap-3"
             >
               <div
                 class="card-p1 w-16 h-16 rounded-full bg-[#6AB187aa] drop-shadow-2xl flex items-center justify-center gap-8"
@@ -170,17 +193,19 @@
                 <img
                   class="w-10 h-10"
                   src="./src/images/path/people-svgrepo-com.svg"
-                  alt=""
+                  alt="مردم"
                 />
               </div>
               <div class="card-p2">
-                <h2 class="font-bold-es text-[16px] text-[#166861]">
+                <h2
+                  class="font-bold-es text-base md:text-[16px] text-[#166861]"
+                >
                   درخواست کمک
                 </h2>
               </div>
               <div class="card-p3 flex justify-center">
                 <h6
-                  class="font-regular-es w-[80%] leading-7 text-[14px] text-[#166861] text-center"
+                  class="font-regular-es w-[85%] leading-6 md:leading-7 text-[13px] md:text-[14px] text-[#166861] text-center"
                 >
                   با متخصصان، گروه‌های حمایتی و افراد مورد اعتماد خود ارتباط
                   بگیرید
@@ -188,9 +213,9 @@
               </div>
             </div>
           </div>
-          <div class="card-3">
+          <div class="card-3 w-full md:w-80">
             <div
-              class="card w-80 h-55 bg-white rounded-xl drop-shadow-2xl mt-10 px-2 py-4 flex flex-col items-center gap-3"
+              class="card w-full md:w-80 h-auto md:h-55 bg-white rounded-xl drop-shadow-2xl mt-4 md:mt-10 px-4 md:px-2 py-6 md:py-4 flex flex-col items-center gap-3"
             >
               <div
                 class="card-p1 w-16 h-16 rounded-full bg-[#6AB187aa] drop-shadow-2xl flex items-center justify-center gap-8"
@@ -198,24 +223,28 @@
                 <img
                   class="w-10 h-10"
                   src="./src/images/path/progress-report-svgrepo-com.svg"
-                  alt=""
+                  alt="گزارش پیشرفت"
                 />
               </div>
               <div class="card-p2">
-                <h2 class="font-bold-es text-[16px] text-[#166861]">درمان</h2>
+                <h2
+                  class="font-bold-es text-base md:text-[16px] text-[#166861]"
+                >
+                  درمان
+                </h2>
               </div>
               <div class="card-p3 flex justify-center">
                 <h6
-                  class="font-regular-es w-[80%] leading-7 text-[14px] text-[#166861] text-center"
+                  class="font-regular-es w-[85%] leading-6 md:leading-7 text-[13px] md:text-[14px] text-[#166861] text-center"
                 >
                   از روش‌های درمانی علمی و مراقبت‌های پزشکی معتبر استفاده کنید
                 </h6>
               </div>
             </div>
           </div>
-          <div class="card-4">
+          <div class="card-4 w-full md:w-80">
             <div
-              class="card w-80 h-55 bg-white rounded-2xl drop-shadow-xl mt-10 px-2 py-4 flex flex-col items-center gap-3"
+              class="card w-full md:w-80 h-auto md:h-55 bg-white rounded-2xl drop-shadow-xl mt-4 md:mt-10 px-4 md:px-2 py-6 md:py-4 flex flex-col items-center gap-3"
             >
               <div
                 class="card-p1 w-16 h-16 rounded-full bg-[#6AB187aa] drop-shadow-2xl flex items-center justify-center gap-8"
@@ -223,18 +252,20 @@
                 <img
                   class="w-10 h-10"
                   src="./src/images/path/stars-svgrepo-com.svg"
-                  alt=""
+                  alt="ستاره‌ها"
                 />
               </div>
               <div class="card-p2">
-                <h2 class="font-bold-es text-[16px] text-[#166861]">
+                <h2
+                  class="font-bold-es text-base md:text-[16px] text-[#166861]"
+                >
                   بهبودی مستمر
                 </h2>
               </div>
               <div class="card-p3 flex justify-center">
                 <h6
                   id="service"
-                  class="font-regular-es w-[80%] leading-7 text-[14px] text-[#166861] text-center"
+                  class="font-regular-es w-[85%] leading-6 md:leading-7 text-[13px] md:text-[14px] text-[#166861] text-center"
                 >
                   با حمایت مداوم و تغییر سبک زندگی، پاکی را حفظ کنید
                 </h6>
@@ -247,54 +278,56 @@
       <!--#region service-->
 
       <div
-        class="service flex flex-col w-360 max-w-360 mx-auto mt-10 gap-10 justify-center items-center"
+        class="service flex flex-col w-full px-4 md:px-0 md:max-w-360 mx-auto mt-8 md:mt-10 gap-6 md:gap-10 justify-center items-center"
       >
         <div
-          class="w-142 h-50 flex flex-col gap-5 bg-white drop-shadow-xl py-5 px-10 rounded-2xl text-center justify-center items-center"
+          class="w-full md:w-142 h-auto md:h-50 flex flex-col gap-4 md:gap-5 bg-white drop-shadow-xl py-6 md:py-5 px-6 md:px-10 rounded-2xl text-center justify-center items-center"
         >
           <h1
-            class="text-[24px] font-regular-es text-[#166861] text-shadow-2xs"
+            class="text-xl md:text-[24px] font-regular-es text-[#166861] text-shadow-2xs"
           >
             خدمات ما
           </h1>
           <h4
-            class="text-[16px] font-regular-es text-[#166861] text-shadow-2xs"
+            class="text-sm md:text-[16px] font-regular-es text-[#166861] text-shadow-2xs"
           >
             در این مسیر تنها نیستید؛ ما کنار شما ایستاده‌ایم تا با هم،
             قدم‌به‌قدم به سمت آرامش و بهبودی حرکت کنیم.
           </h4>
         </div>
+
+        <!-- Service Item 1 -->
         <div
-          class="service-p1 h-77 rounded-2xl px-5 py-3 flex mx-auto gap-8 bg-white drop-shadow-xl"
+          class="service-p1 w-full h-auto md:h-77 rounded-2xl px-4 md:px-5 py-6 md:py-3 flex flex-col md:flex-row mx-auto gap-6 md:gap-8 bg-white drop-shadow-xl"
         >
-          <div class="flex flex-col gap-4 w-125">
+          <div class="flex flex-col gap-4 w-full md:w-125">
             <div class="flex gap-2 items-center">
               <div
-                class="w-10 h-10 rounded-full bg-[#78b49eaa] flex justify-center items-center"
+                class="w-10 h-10 rounded-full bg-[#78b49eaa] flex justify-center items-center shrink-0"
               >
                 <img
                   class="w-8 h-8"
                   src="./src/images/service/realize-svgrepo-com.svg"
-                  alt=""
+                  alt="تشخیص"
                 />
               </div>
               <h2
-                class="text-[26px] text-[#e26d47] font-bold-es text-right text-shadow-2xs"
+                class="text-lg md:text-[26px] text-[#e26d47] font-bold-es text-right text-shadow-2xs"
               >
                 تشخیص مشکل
               </h2>
             </div>
             <h4
-              class="text-[18px] text-[#168861] font-regular-es text-right text-shadow-2xs"
+              class="text-base md:text-[18px] text-[#168861] font-regular-es text-right text-shadow-2xs"
             >
               <span class="text-[#e26d47aa]">پاسخ‌ها</span> از جایی شروع می‌شوند
               که <span class="text-shadow text-[#e26d47aa]">سؤال‌ها</span> جدی
               گرفته می‌شوند
             </h4>
 
-            <div class="flex flex-col gap-4 px-4">
+            <div class="flex flex-col gap-3 md:gap-4 px-3 md:px-4">
               <h6
-                class="font-regular-es text-[13px] leading-6 text-[#168861] text-shadow-2xs w-[99%]"
+                class="font-regular-es text-[12px] md:text-[13px] leading-6 text-[#168861] text-shadow-2xs w-full"
               >
                 بسیاری از افراد مدت‌ها با رنجی درونی زندگی می‌کنند، بدون آن‌که
                 دقیقاً بدانند مشکل از کجاست. ما به شما کمک میکنیم تا با
@@ -303,21 +336,21 @@
                 چه چیزی مانع آرامش و پیشرفت شما شده است.
               </h6>
               <h6
-                class="text-[#168861] font-regular-es text-[13px] text-shadow-2xs"
+                class="text-[#168861] font-regular-es text-[12px] md:text-[13px] text-shadow-2xs"
               >
                 <span class="text-[#e26d47]">&#8226;</span>
                 <span class="text-[#e26d47aa]">تشخیص</span> تفاوت بین علائم و
                 علت‌های اصلی
               </h6>
               <h6
-                class="text-[#168861] font-regular-es text-[13px] text-shadow-2xs"
+                class="text-[#168861] font-regular-es text-[12px] md:text-[13px] text-shadow-2xs"
               >
                 <span class="text-[#e26d47]">&#8226;</span>
                 <span class="text-[#e26d47aa]">کاهش</span> سردرگمی و افزایش حس
                 کنترل بر وضعیت
               </h6>
               <h6
-                class="text-[#168861] font-regular-es text-[13px] text-shadow-2xs"
+                class="text-[#168861] font-regular-es text-[12px] md:text-[13px] text-shadow-2xs"
               >
                 <span class="text-[#e26d47]">&#8226;</span>
                 <span class="text-[#e26d47aa]">کمک</span> به انتخاب مسیر درمانی
@@ -325,44 +358,46 @@
               </h6>
             </div>
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center w-full md:w-auto justify-center">
             <img
-              class="w-85 rounded-2xl drop-shadow-2xl"
+              class="w-full md:w-85 rounded-2xl drop-shadow-2xl"
               src="./src/images/service/recognize.png"
               alt="شناخت مشکلات، اولین قدم برای درمان "
             />
           </div>
         </div>
+
+        <!-- Service Item 2 -->
         <div
-          class="service-p2 h-77 rounded-2xl px-5 py-3 flex flex-row-reverse mx-auto gap-8 bg-white drop-shadow-xl"
+          class="service-p2 w-full h-auto md:h-77 rounded-2xl px-4 md:px-5 py-6 md:py-3 flex flex-col-reverse md:flex-row-reverse mx-auto gap-6 md:gap-8 bg-white drop-shadow-xl"
         >
-          <div class="flex flex-col gap-4 w-125">
+          <div class="flex flex-col gap-4 w-full md:w-125">
             <div class="flex gap-2 items-center">
               <div
-                class="w-10 h-10 rounded-full bg-[#78b49eaa] flex justify-center items-center"
+                class="w-10 h-10 rounded-full bg-[#78b49eaa] flex justify-center items-center shrink-0"
               >
                 <img
                   class="w-8 h-8"
                   src="./src/images/service/support-alt-svgrepo-com.svg"
-                  alt=""
+                  alt="پشتیبانی"
                 />
               </div>
               <h2
-                class="text-[26px] text-[#e26d47] font-bold-es text-right text-shadow-2xs"
+                class="text-lg md:text-[26px] text-[#e26d47] font-bold-es text-right text-shadow-2xs"
               >
                 درخواست کمک
               </h2>
             </div>
             <h4
-              class="text-[18px] text-[#168861] font-regular-es text-right text-shadow-2xs"
+              class="text-base md:text-[18px] text-[#168861] font-regular-es text-right text-shadow-2xs"
             >
               شما در این مسیر
               <span class="text-[#e26d47aa]">تنها</span> نیستید.
             </h4>
 
-            <div class="flex flex-col gap-4 px-4">
+            <div class="flex flex-col gap-3 md:gap-4 px-3 md:px-4">
               <h6
-                class="font-regular-es text-[13px] leading-6 text-[#168861] text-shadow-2xs w-[99%]"
+                class="font-regular-es text-[12px] md:text-[13px] leading-6 text-[#168861] text-shadow-2xs w-full"
               >
                 <span class="text-[#e26d47aa]">ارتباط</span> با افرادی که آموزش
                 دیده‌اند یا تجربه‌ی مشابهی داشته‌اند، می‌تواند دید روشن‌تری به
@@ -371,66 +406,68 @@
                 آرامش و بهبودی است.
               </h6>
               <h6
-                class="text-[#168861] font-regular-es text-[13px] text-shadow-2xs"
+                class="text-[#168861] font-regular-es text-[12px] md:text-[13px] text-shadow-2xs"
               >
                 <span class="text-[#e26d47]">&#8226;</span>
                 <span class="text-[#e26d47aa]">صحبت</span> با افراد مورد اعتماد
                 بدون ترس از قضاوت
               </h6>
               <h6
-                class="text-[#168861] font-regular-es text-[13px] text-shadow-2xs"
+                class="text-[#168861] font-regular-es text-[12px] md:text-[13px] text-shadow-2xs"
               >
                 <span class="text-[#e26d47]">&#8226;</span>
                 <span class="text-[#e26d47aa]">دریافت</span> راهنمایی برای
                 ادامه‌ی مسیر درمان
               </h6>
               <h6
-                class="text-[#168861] font-regular-es text-[13px] text-shadow-2xs"
+                class="text-[#168861] font-regular-es text-[12px] md:text-[13px] text-shadow-2xs"
               >
                 <span class="text-[#e26d47]">&#8226;</span>
-                <span class="text-[#e26d47aa]">بهره‌مندی</span> بهره‌مندی از
-                تجربه‌ی گروه‌های حمایتی
+                <span class="text-[#e26d47aa]">بهره‌مندی</span> از تجربه‌ی
+                گروه‌های حمایتی
               </h6>
             </div>
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center w-full md:w-auto justify-center">
             <img
-              class="w-85 rounded-2xl drop-shadow-2xl"
+              class="w-full md:w-85 rounded-2xl drop-shadow-2xl"
               src="./src/images/service/support.jpeg"
-              alt="شناخت مشکلات، اولین قدم برای درمان "
+              alt="درخواست کمک"
             />
           </div>
         </div>
+
+        <!-- Service Item 3 -->
         <div
-          class="service-p3 h-77 rounded-2xl px-5 py-3 flex mx-auto gap-8 bg-white drop-shadow-xl"
+          class="service-p3 w-full h-auto md:h-77 rounded-2xl px-4 md:px-5 py-6 md:py-3 flex flex-col md:flex-row mx-auto gap-6 md:gap-8 bg-white drop-shadow-xl"
         >
-          <div class="flex flex-col gap-4 w-125">
+          <div class="flex flex-col gap-4 w-full md:w-125">
             <div class="flex gap-2 items-center">
               <div
-                class="w-10 h-10 rounded-full bg-[#78b49eaa] flex justify-center items-center"
+                class="w-10 h-10 rounded-full bg-[#78b49eaa] flex justify-center items-center shrink-0"
               >
                 <img
                   class="w-8 h-8"
                   src="./src/images/service/realize-svgrepo-com.svg"
-                  alt=""
+                  alt="درمان"
                 />
               </div>
               <h2
-                class="text-[26px] text-[#feb4cb] font-bold-es text-right text-shadow-2xs"
+                class="text-lg md:text-[26px] text-[#feb4cb] font-bold-es text-right text-shadow-2xs"
               >
                 درمان
               </h2>
             </div>
             <h4
-              class="text-[18px] text-[#168861] font-regular-es text-right text-shadow-2xs"
+              class="text-base md:text-[18px] text-[#168861] font-regular-es text-right text-shadow-2xs"
             >
               درمان زمانی آغاز می‌شود که
               <span class="text-[#feb4cb]">مسیر درست</span> را انتخاب می‌کنید.
             </h4>
 
-            <div class="flex flex-col gap-4 px-4">
+            <div class="flex flex-col gap-3 md:gap-4 px-3 md:px-4">
               <h6
-                class="font-regular-es text-[13px] leading-6 text-[#168861] text-shadow-2xs w-[99%]"
+                class="font-regular-es text-[12px] md:text-[13px] leading-6 text-[#168861] text-shadow-2xs w-full"
               >
                 درمان مؤثر بر پایه‌ی <span class="text-[#feb4cb]">علم</span>،
                 <span class="text-[#feb4cb]">تجربه</span> و
@@ -439,65 +476,67 @@
                 بهبودی ایمن‌تر، پایدارتر و قابل اعتمادتر خواهد بود.
               </h6>
               <h6
-                class="text-[#168861] font-regular-es text-[13px] text-shadow-2xs"
+                class="text-[#168861] font-regular-es text-[12px] md:text-[13px] text-shadow-2xs"
               >
                 <span class="text-[#feb4cb]">&#8226;</span>
                 <span class="text-[#e26d47aa]">ترکیب</span> درمان دارویی و
                 غیردارویی در صورت نیاز
               </h6>
               <h6
-                class="text-[#168861] font-regular-es text-[13px] text-shadow-2xs"
+                class="text-[#168861] font-regular-es text-[12px] md:text-[13px] text-shadow-2xs"
               >
                 <span class="text-[#feb4cb]">&#8226;</span>
                 <span class="text-[#feb4cb]">بهره گیری</span> از روش‌های درمانی
                 مبتنی بر شواهد علمی
               </h6>
               <h6
-                class="text-[#168861] font-regular-es text-[13px] text-shadow-2xs"
+                class="text-[#168861] font-regular-es text-[12px] md:text-[13px] text-shadow-2xs"
               >
-                <span class="text-[#feb4cb]">&#8226;</span
-                ><span class="text-[#feb4cb]">افزایش</span> شانس بهبودی پایدار و
+                <span class="text-[#feb4cb]">&#8226;</span>
+                <span class="text-[#feb4cb]">افزایش</span> شانس بهبودی پایدار و
                 کاهش احتمال بازگشت
               </h6>
             </div>
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center w-full md:w-auto justify-center">
             <img
-              class="w-84 rounded-2xl drop-shadow-2xl"
+              class="w-full md:w-84 rounded-2xl drop-shadow-2xl"
               src="./src/images/service/cure.jpeg"
-              alt="شناخت مشکلات، اولین قدم برای درمان "
+              alt="درمان"
             />
           </div>
         </div>
+
+        <!-- Service Item 4 -->
         <div
-          class="service-p4 h-77 rounded-2xl px-5 py-3 flex flex-row-reverse mx-auto gap-8 bg-white drop-shadow-xl"
+          class="service-p4 w-full h-auto md:h-77 rounded-2xl px-4 md:px-5 py-6 md:py-3 flex flex-col-reverse md:flex-row-reverse mx-auto gap-6 md:gap-8 bg-white drop-shadow-xl"
         >
-          <div class="flex flex-col gap-4 w-125">
+          <div class="flex flex-col gap-4 w-full md:w-125">
             <div class="flex gap-2 items-center">
               <div
-                class="w-10 h-10 rounded-full bg-[#78b49eaa] flex justify-center items-center"
+                class="w-10 h-10 rounded-full bg-[#78b49eaa] flex justify-center items-center shrink-0"
               >
                 <img
                   class="w-8 h-8"
                   src="./src/images/service/realize-svgrepo-com.svg"
-                  alt=""
+                  alt="بهبودی"
                 />
               </div>
               <h2
-                class="text-[26px] text-[#726A38] font-bold-es text-right text-shadow-2xs"
+                class="text-lg md:text-[26px] text-[#726A38] font-bold-es text-right text-shadow-2xs"
               >
                 بهبودی مستمر
               </h2>
             </div>
             <h4
-              class="text-[18px] text-[#168861] font-regular-es text-right text-shadow-2xs"
+              class="text-base md:text-[18px] text-[#168861] font-regular-es text-right text-shadow-2xs"
             >
               بهبودی یک <span class="text-[#726A38]">مقصد</span> نیست؛ مسیری است
               که هر روز <span class="text-[#726A38]">ادامه</span> دارد
             </h4>
-            <div class="flex flex-col gap-4 px-4">
+            <div class="flex flex-col gap-3 md:gap-4 px-3 md:px-4">
               <h6
-                class="font-regular-es text-[13px] leading-6 text-[#168861] text-shadow-2xs w-[99%]"
+                class="font-regular-es text-[12px] md:text-[13px] leading-6 text-[#168861] text-shadow-2xs w-full"
               >
                 حمایت اطرافیان، <span class="text-[#726A38]">پایبندی</span> به
                 برنامه‌های درمانی و ایجاد تغییرات سالم در
@@ -507,21 +546,21 @@
                 بخشید.
               </h6>
               <h6
-                class="text-[#168861] font-regular-es text-[13px] text-shadow-2xs"
+                class="text-[#168861] font-regular-es text-[12px] md:text-[13px] text-shadow-2xs"
               >
                 <span class="text-[#726a38]">&#8226;</span>
                 <span class="text-[#726a38]">پایبندی</span> به برنامه‌های درمانی
                 و جلسات پیگیری
               </h6>
               <h6
-                class="text-[#168861] font-regular-es text-[13px] text-shadow-2xs"
+                class="text-[#168861] font-regular-es text-[12px] md:text-[13px] text-shadow-2xs"
               >
                 <span class="text-[#726a38]">&#8226;</span>
                 <span class="text-[#726a38]">تقویت</span> توانایی مقابله با
                 چالش‌ها و وسوسه‌ها
               </h6>
               <h6
-                class="text-[#168861] font-regular-es text-[13px] text-shadow-2xs"
+                class="text-[#168861] font-regular-es text-[12px] md:text-[13px] text-shadow-2xs"
               >
                 <span class="text-[#726a38]">&#8226;</span>
                 <span class="text-[#726a38]">عادت های</span> سالم در زندگی
@@ -529,48 +568,48 @@
               </h6>
             </div>
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center w-full md:w-auto justify-center">
             <img
               id="questions"
-              class="w-85 rounded-2xl drop-shadow-2xl"
+              class="w-full md:w-85 rounded-2xl drop-shadow-2xl"
               src="./src/images/service/health.jpeg"
-              alt=""
+              alt="بهبودی"
             />
           </div>
         </div>
       </div>
       <!--#endregion service-->
       <!--#region questions-->
-      <div class="w-360 max-w-360 mx-auto">
+      <div class="w-full px-4 md:px-0 md:max-w-360 mx-auto">
         <div
-          class="w-270 h-130 bg-[#6ab186] mx-auto mt-20 rounded-2xl drop-shadow-xl flex flex-col py-8 px-9 gap-12"
+          class="w-full md:w-270 h-auto md:h-150 bg-[#6ab186] mx-auto mt-10 md:mt-20 rounded-2xl drop-shadow-xl flex flex-col py-6 md:py-8 px-4 md:px-9 gap-8 md:gap-12"
         >
-          <div class="flex items-center gap-5">
+          <div class="flex items-start md:items-center gap-3 md:gap-5">
             <img
-              class="w-11 h-11"
+              class="w-10 h-10 md:w-11 md:h-11 shrink-0"
               src="./src/images/questions/human-head-with-a-question-mark-inside-svgrepo-com.svg"
               alt="سر یک انسان با یک علامت سوال درونش"
             />
             <h3
-              class="text-[20px] text-[whitesmoke] text-shadow-2xs font-bold-es"
+              class="text-base md:text-[20px] text-[whitesmoke] text-shadow-2xs font-bold-es"
             >
               سؤال یا نگرانی‌ای در ذهنتان دارید؟ اینجا به رایج‌ترین پرسش‌ها،
               شفاف و صادقانه پاسخ داده‌ایم:
             </h3>
           </div>
-          <div class="q-a flex flex-col gap-7">
+          <div class="q-a flex flex-col gap-3 md:gap-7">
             <details
               class="collapse bg-[#168861]"
               name="my-accordion-det-1"
               open
             >
               <summary
-                class="collapse-title font-bold-es text-[18px] text-[whitesmoke]"
+                class="collapse-title font-bold-es text-base md:text-[18px] text-[whitesmoke] p-3 md:p-4"
               >
                 میتونم بدون درد ترک کنم؟
               </summary>
               <div
-                class="collapse-content font-regular-es text-[16px] text-[whitesmoke] text-shadow-2xs"
+                class="collapse-content font-regular-es text-sm md:text-[16px] text-[whitesmoke] text-shadow-2xs p-3 md:p-4"
               >
                 بله، با داروهای گیاهی ما بدون ذره ای درد، درمان می شوید.
                 داروهایی که توسط تیم طب سنتی پاک یار ساخته شده.
@@ -581,12 +620,12 @@
               name="my-accordion-det-1"
             >
               <summary
-                class="collapse-title font-bold-es text-[18px] text-[whitesmoke]"
+                class="collapse-title font-bold-es text-base md:text-[18px] text-[whitesmoke] p-3 md:p-4"
               >
                 آیا در آینده این مشکل دوباره برمیگرده؟
               </summary>
               <div
-                class="collapse-content font-regular-es text-[16px] text-[whitesmoke] text-shadow-2xs"
+                class="collapse-content font-regular-es text-sm md:text-[16px] text-[whitesmoke] text-shadow-2xs p-3 md:p-4"
               >
                 با داروهای ما بدن شما پاک سازی و سم زدایی میشه و دیگه برگشتی به
                 مواد مخدر وجود نداره.
@@ -597,12 +636,27 @@
               name="my-accordion-det-1"
             >
               <summary
-                class="collapse-title font-bold-es text-[18px] text-[whitesmoke]"
+                class="collapse-title font-bold-es text-base md:text-[18px] text-[whitesmoke] p-3 md:p-4"
               >
                 بدنم چقدر زمان می‌خواد؟
               </summary>
               <div
-                class="collapse-content font-regular-es text-[16px] text-[whitesmoke] text-shadow-2xs"
+                class="collapse-content font-regular-es text-sm md:text-[16px] text-[whitesmoke] text-shadow-2xs p-3 md:p-4"
+              >
+                پاک شدن بدن از مخدر فقط ۳ تا ۵ روز زمان میبره.
+              </div>
+            </details>
+            <details
+              class="collapse bg-[#168861] drop-shadow-2xl"
+              name="my-accordion-det-1"
+            >
+              <summary
+                class="collapse-title font-bold-es text-base md:text-[18px] text-[whitesmoke] p-3 md:p-4"
+              >
+                خانواده چطوری میتونن کمک کننده باشن؟
+              </summary>
+              <div
+                class="collapse-content font-regular-es text-sm md:text-[16px] text-[whitesmoke] text-shadow-2xs p-3 md:p-4"
               >
                 فرد بیمار رو درک کنن، صبور باشن و بهشون روحیه بدن تا بیمار به
                 اعتیاد غلبه کنه.
@@ -613,13 +667,13 @@
               name="my-accordion-det-1"
             >
               <summary
-                class="collapse-title font-bold-es text-[18px] text-[whitesmoke]"
+                class="collapse-title font-bold-es text-base md:text-[18px] text-[whitesmoke] p-3 md:p-4"
               >
                 چجوری میتونم باهاتون ارتباط بگیرم؟
               </summary>
               <div
                 id="footer"
-                class="collapse-content font-regular-es text-[16px] text-[whitesmoke] text-shadow-2xs"
+                class="collapse-content font-regular-es text-sm md:text-[16px] text-[whitesmoke] text-shadow-2xs p-3 md:p-4"
               >
                 با کلیک کردن بر روی دکمه "تماس با ما" در بالا سمت چپ صفحه می
                 توانید از تمام راه های ارتباطی مطلع شوید.
@@ -631,52 +685,52 @@
       <!--#endregion questions-->
       <!--#region footer-->
       <div
-        class="my-footer w-360 md:w-360 h-full md:h-125 py-8 md:py-14 px-4 md:px-6 md:mt-20 mx-auto max-w-360 md:max-w-360 bg-[url(/src/images/footer/bg-footer.png)] bg-repeat-round rounded-2xl flex flex-col items-center gap-4 drop-shadow-xl"
+        class="my-footer w-full md:max-w-360 h-auto md:h-auto py-8 md:py-14 px-4 md:px-6 md:mt-20 mx-auto bg-[url(/src/images/footer/bg-footer.png)] bg-repeat-round rounded-2xl flex flex-col items-center gap-4 md:gap-8 drop-shadow-xl"
       >
+        <!-- Contact Info Section -->
         <div
-          class="w-full md:w-[94%] h-auto md:h-25.25 rounded-lg flex flex-col md:flex-row gap-4 md:gap-0 border border-[#168861] mx-auto items-center justify-center md:justify-between md:px-12 p-4"
+          class="w-full h-auto rounded-lg flex flex-col md:flex-row gap-4 md:gap-0 border border-[#168861] mx-auto items-center justify-center md:justify-between md:px-12 p-4"
         >
+          <!-- Phone Contact -->
           <div
             class="flex flex-col md:flex-row justify-center md:justify-start items-center w-full md:w-auto h-auto md:h-17.25 gap-4"
           >
-            <div class="rounded-xl border-[#168861] border p-3 shrink-0">
-              <a href="#footer">
-                <img
-                  class="w-5 md:w-6 h-5 md:h-6"
-                  src="./src/images/footer/phone-calling-svgrepo-com.svg"
-                  alt=""
-              /></a>
+            <div class="rounded-xl border-[#168861] border p-2 md:p-3 shrink-0">
+              <img
+                class="w-5 md:w-6 h-5 md:h-6"
+                src="./src/images/footer/phone-calling-svgrepo-com.svg"
+                alt="تماس"
+              />
             </div>
-            <div
-              class="flex flex-col items-center md:items-start gap-2 md:gap-2"
-            >
-              <a
-                class="font-regular-es text-sm md:text-[16px] text-[#168861] font-normal"
-                href="#"
+            <div class="flex flex-col items-center md:items-start gap-2">
+              <span
+                class="font-regular-es text-xs md:text-[16px] text-[#168861] font-normal"
               >
                 تماس مستقیم
-              </a>
-
-              <div class="flex leading flex-col justify-center items-center">
-                <div class="flex gap-7 justify-center items-center">
-                  <h2 class="text-[#168861] font-regular-es text-[14px]">
+              </span>
+              <div class="flex flex-col justify-center items-center gap-1">
+                <div class="flex gap-4 md:gap-7 justify-center items-center">
+                  <h2
+                    class="text-[#168861] font-regular-es text-[12px] md:text-[14px]"
+                  >
                     نقی زمانی
                   </h2>
                   <a
-                    class="font-regular-es text-sm md:text-[16px] text-[#168861] font-normal"
+                    class="font-regular-es text-xs md:text-[16px] text-[#168861] font-normal"
                     href="tel:09019085990"
                   >
                     09019085990
                   </a>
                 </div>
-                <div class="flex gap-3 justify-center items-center">
-                  <h2 class="font-regular-es text-[14px] text-[#168861]">
+                <div class="flex gap-2 md:gap-3 justify-center items-center">
+                  <h2
+                    class="font-regular-es text-[12px] md:text-[14px] text-[#168861]"
+                  >
                     حسین زمانی
                   </h2>
                   <a
-                    class="text-sm md:text-[16px] text-[#168861] font-regular-es"
-                    href="tel:
-09393316585"
+                    class="text-xs md:text-[16px] text-[#168861] font-regular-es"
+                    href="tel:09393316585"
                   >
                     09393316585
                   </a>
@@ -684,50 +738,49 @@
               </div>
             </div>
           </div>
+
+          <!-- Divider -->
           <div class="hidden md:block w-px h-10 bg-[#168861]"></div>
+
+          <!-- Social Media -->
           <div
             class="flex flex-col md:flex-row justify-center md:justify-start items-center w-full md:w-auto h-auto md:h-17.25 gap-4"
           >
-            <div class="rounded-xl border-[#168861] border p-3 shrink-0">
-              <a href="#footer">
-                <img
-                  class="w-5 md:w-6 h-5 md:h-6"
-                  src="./src/images/footer/sms-svgrepo-com.svg"
-                  alt=""
-              /></a>
+            <div class="rounded-xl border-[#168861] border p-2 md:p-3 shrink-0">
+              <img
+                class="w-5 md:w-6 h-5 md:h-6"
+                src="./src/images/footer/sms-svgrepo-com.svg"
+                alt="پیام"
+              />
             </div>
             <div
               class="flex flex-col items-center md:items-start gap-2 md:gap-3"
             >
-              <div class="flex justify-center items-center gap-5">
-                <a
-                  class="font-regular-es text-sm md:text-[16px] text-[#168861] font-normal"
-                  href="#"
-                >
-                  فضای مجازی
-                </a>
-              </div>
-              <div class="flex gap-10">
+              <span
+                class="font-regular-es text-xs md:text-[16px] text-[#168861] font-normal"
+              >
+                فضای مجازی
+              </span>
+              <div class="flex gap-6 md:gap-10">
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  class=""
-                  href="https://wa.me/989199953045"
+                  href="https://wa.me/989393316585"
                   ><img
-                    class="w-7 h-7"
+                    class="w-6 h-6 md:w-7 md:h-7"
                     src="./src/images/footer/whatsapp-svgrepo-com.svg"
-                    alt="عکس واتسپ"
+                    alt="واتسپ"
                 /></a>
                 <a
                   id="telegram-link"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://t.me/Eh3uNamm"
+                  href="https://t.me/Hossein_zam"
                 >
                   <img
-                    class="w-7 h-7"
+                    class="w-6 h-6 md:w-7 md:h-7"
                     src="./src/images/footer/telegram-svgrepo-com.svg"
-                    alt="عکس تلگرام"
+                    alt="تلگرام"
                   />
                 </a>
                 <a
@@ -736,59 +789,73 @@
                   href="https://www.instagram.com/eh3unpv"
                 >
                   <img
-                    class="w-7 h-7"
+                    class="w-6 h-6 md:w-7 md:h-7"
                     src="./src/images/footer/instagram-167-svgrepo-com.svg"
-                    alt=""
+                    alt="اینستاگرام"
                   />
                 </a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://wa.me/989019085990"
+                  ><img
+                    class="w-6 h-6 md:w-7 md:h-7"
+                    src="./src/images/footer/whatsapp-svgrepo-com.svg"
+                    alt="واتسپ"
+                /></a>
               </div>
             </div>
           </div>
+
+          <!-- Divider -->
           <div class="hidden md:block w-px h-10 bg-[#168861]"></div>
+
+          <!-- Address -->
           <div
             class="flex flex-col md:flex-row justify-center md:justify-start items-center w-full md:w-auto h-auto md:h-17.25 gap-4"
           >
-            <div class="rounded-xl border-[#168861] border p-3 shrink-0">
-              <a href="#footer">
-                <img
-                  class="w-5 md:w-6 h-5 md:h-6"
-                  src="./src/images/footer/map-location-pin-svgrepo-com.svg"
-                  alt=""
-              /></a>
+            <div class="rounded-xl border-[#168861] border p-2 md:p-3 shrink-0">
+              <img
+                class="w-5 md:w-6 h-5 md:h-6"
+                src="./src/images/footer/map-location-pin-svgrepo-com.svg"
+                alt="نقشه"
+              />
             </div>
             <div
               class="flex flex-col items-center md:items-start gap-2 md:gap-3"
             >
-              <a
-                class="font-regular-es text-sm md:text-[16px] text-[#168861] font-normal"
-                href="#"
+              <span
+                class="font-regular-es text-xs md:text-[16px] text-[#168861] font-normal"
               >
                 آدرس
-              </a>
-
-              <a
-                class="font-regular-es text-sm md:text-[16px] text-[#168861] font-normal"
-                href="#"
+              </span>
+              <span
+                class="font-regular-es text-xs md:text-[16px] text-[#168861] font-normal"
               >
-                تهران- خ شادمان
-              </a>
+                تهران-چیتگر
+              </span>
             </div>
           </div>
         </div>
+
+        <!-- Logo and Links Section -->
         <div
-          class="w-full md:w-278.75 justify-center flex flex-col md:flex-row gap-8 md:gap-35"
+          class="w-full justify-center flex flex-col md:flex-row gap-6 md:gap-35"
         >
+          <!-- Logo and Description -->
           <div
-            class="flex flex-col w-full md:w-101.75 h-auto md:h-21.25 justify-between items-center gap-4 md:gap-6"
+            class="flex flex-col w-full md:w-101.75 h-auto justify-between items-center gap-4 md:gap-6"
           >
-            <a class="w-23 h-23 bg-[#acb8b4aa] rounded-full" href="#"
+            <a
+              class="w-20 h-20 md:w-23 md:h-23 bg-[#acb8b4aa] rounded-full flex items-center justify-center"
+              href="#"
               ><img
-                class="w-24 md:w-28"
+                class="w-20 md:w-28"
                 src="./src/images/footer/Logo.png"
-                alt=""
+                alt="لوگو"
             /></a>
             <p
-              class="font-regular-es font-normal text-[#168861] leading-7 text-xs md:text-[14px] text-center"
+              class="font-regular-es font-normal text-[#168861] leading-6 md:leading-7 text-xs md:text-[14px] text-center"
             >
               بعضی وقت‌ها فقط شنیدن صدای یک آدم آگاه، می‌تونه مسیر رو عوض کنه.
               اگر آماده صحبت هستی، کافیه با یکی از شماره های ما تماس بگیری تا
@@ -796,8 +863,9 @@
             </p>
           </div>
 
+          <!-- Navigation Links -->
           <div
-            class="flex flex-col gap-3 md:gap-6 justify-center text-[#168861] text-sm md:text-base"
+            class="flex flex-col gap-3 md:gap-6 justify-center text-[#168861] text-xs md:text-base"
           >
             <div>
               <a href="#questions">سوالات متداول</a>
@@ -808,24 +876,28 @@
             <div>
               <a href="#">درباره ما</a>
             </div>
-            <div>
+            <div class="">
               <a href="#">لوکیشن حضوری</a>
             </div>
           </div>
         </div>
+
+        <!-- Divider Line -->
         <span
-          class="w-full md:w-[94%] mx-auto h-0 mt-6 block border border-[#168861] relative"
+          class="w-full mx-auto h-0 mt-4 md:mt-6 block border border-[#168861] relative"
         >
         </span>
+
+        <!-- Designer Credit Section -->
         <div
-          class="w-full md:w-[94%] mx-auto flex gap-1.5 mt-4 items-center justify-center px-4 md:px-12"
+          class="w-full mx-auto flex flex-col gap-3 md:gap-0 md:gap-1.5 mt-4 items-center justify-center px-4 md:px-12"
         >
-          <div class="flex flex-col justify-center items-center gap-4">
-            <div class="flex gap-2 justify-center items-center">
+          <div class="flex flex-col justify-center items-center gap-3 md:gap-4">
+            <div class="flex gap-2 justify-center items-center flex-wrap">
               <img
                 class="w-5 md:w-6 h-5 md:h-6 shrink-0"
                 src="./src/images/footer/creative-commons.svg"
-                alt=""
+                alt="کریتیو کامنز"
               />
               <p
                 class="font-light-es text-xs md:text-[14px] text-[#168861] text-center"
@@ -834,27 +906,26 @@
                 نمایید:
               </p>
             </div>
-            <div class="flex gap-10">
+            <div class="flex gap-6 md:gap-10">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                class=""
                 href="https://wa.me/989199953045"
                 ><img
-                  class="w-7 h-7"
+                  class="w-6 h-6 md:w-7 md:h-7"
                   src="./src/images/footer/whatsapp-svgrepo-com.svg"
-                  alt="عکس واتسپ"
+                  alt="واتسپ"
               /></a>
               <a
-                id="telegram-link"
+                id="telegram-link-2"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://t.me/Eh3uNamm"
               >
                 <img
-                  class="w-7 h-7"
+                  class="w-6 h-6 md:w-7 md:h-7"
                   src="./src/images/footer/telegram-svgrepo-com.svg"
-                  alt="عکس تلگرام"
+                  alt="تلگرام"
                 />
               </a>
               <a
@@ -863,24 +934,24 @@
                 href="mailto:e.naghibi@yahoo.com"
               >
                 <img
-                  class="w-7 h-7"
+                  class="w-6 h-6 md:w-7 md:h-7"
                   src="./src/images/footer/sms-svgrepo-com.svg"
-                  alt=""
+                  alt="ایمیل"
                 />
               </a>
               <div
                 id="vpn-modal"
-                class="fixed inset-0 flex items-center justify-center bg-black/50 hidden"
+                class="fixed inset-0 flex items-center justify-center bg-black/50 hidden z-50"
               >
                 <div
-                  class="bg-white p-6 rounded-xl drop-shadow-xl max-w-sm text-center font-medium-es"
+                  class="bg-white p-6 rounded-xl drop-shadow-xl max-w-sm text-center font-medium-es mx-4"
                 >
-                  <p class="text-[#168861] text-lg mb-4">
+                  <p class="text-[#168861] text-base md:text-lg mb-4">
                     برای دسترسی به تلگرام، لطفاً VPN خود را روشن کنید.
                   </p>
                   <button
                     id="vpn-confirm"
-                    class="bg-[#168861] text-white px-6 py-2 rounded-lg hover:bg-green-700 transition font-medium-es"
+                    class="bg-[#168861] text-white px-6 py-2 rounded-lg hover:bg-[#136855] transition font-medium-es text-sm md:text-base"
                   >
                     وصل کردم
                   </button>
@@ -894,5 +965,22 @@
     </div>
     <!--#endregion wrapper-->
     <script src="./src/js/main.js"></script>
+    <script>
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Close menu when a link is clicked
+      const menuLinks = mobileMenu.querySelectorAll("a");
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+    </script>
   </body>
 </html>
