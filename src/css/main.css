@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@font-face {
+  font-family: medium-es;
+  src: url(../fonts/Estedad-Medium.ttf);
+}
+@font-face {
+  font-family: medium-es;
+  src: url(../fonts/Estedad-Medium.woff2);
+}
+@font-face {
+  font-family: bold-es;
+  src: url(../fonts/Estedad-SemiBold.ttf);
+}
+@font-face {
+  font-family: bold-es;
+  src: url(../fonts/Estedad-SemiBold.woff2);
+}
+@font-face {
+  font-family: regular-es;
+  src: url(../fonts/Estedad-Regular.ttf);
+}
+@font-face {
+  font-family: regular-es;
+  src: url(../fonts/Estedad-Regular.woff2);
+}
+@font-face {
+  font-family: light-es;
+  src: url(../fonts/Estedad-Light.ttf);
+}
+@font-face {
+  font-family: light-es;
+  src: url(../fonts/Estedad-Light.woff2);
+}
+@theme {
+  --font-medium-es: "medium-es";
+  --font-bold-es: "bold-es";
+  --font-regular-es: "regular-es";
+  --font-light-es: "light-es";
+}
+html{
+  scroll-behavior: smooth;
+}
