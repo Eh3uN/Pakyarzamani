@@ -10,7 +10,7 @@ const telegramLink = document.getElementById("telegram-link");
   vpnConfirm.addEventListener("click", function() {
     vpnModal.classList.add("hidden"); // مخفی کردن modal
     // باز کردن تلگرام در تب جدید
-    window.open("https://t.me/", "_blank", "noopener,noreferrer");
+    window.open("https://t.me/hossein_zam", "_blank", "noopener,noreferrer");
   });
    const telegramLink2 = document.getElementById("telegram-link-2");
   const telegramModal2 = document.getElementById("telegram-vpn-modal-2");
@@ -45,3 +45,19 @@ const telegramLink = document.getElementById("telegram-link");
         });
       });
       
+    // instagram vpn confirmation
+
+    const instagramLink = document.getElementById("instagram-link");
+  const instagramModal = document.getElementById("instagram-modal");
+  const instagramConfirm = document.getElementById("instagram-confirm");
+
+  instagramLink.addEventListener("click", function(event) {
+    event.preventDefault(); // جلوی باز شدن مستقیم لینک رو می‌گیره
+    instagramModal.classList.remove("hidden"); // نمایش modal
+  });
+
+ instagramConfirm.addEventListener("click", function() {
+    instagramModal.classList.add("hidden"); // مخفی کردن modal
+    // باز کردن تلگرام در تب جدید
+    window.open("https://www.instagram.com/pakyar_zamani", "_blank", "noopener,noreferrer");
+  });
