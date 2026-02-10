@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://pakyarzamani.ir/sitemap.xml
+Host: pakyarzamani.ir
